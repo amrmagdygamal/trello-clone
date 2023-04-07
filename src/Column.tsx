@@ -1,4 +1,6 @@
-import { CardContainer, ColumnContainer, ColumnTitle } from "./styles";
+import { AddNewItem } from "./AddNewItem";
+import { Card } from "./Card";
+import { ColumnContainer, ColumnTitle } from "./styles";
 
 
 type ColumnProps = {
@@ -8,9 +10,10 @@ export const Column = ({text}: ColumnProps) => {
   return (
     <ColumnContainer>
       <ColumnTitle>{text}</ColumnTitle>
-      <CardContainer>Generate app scaffold</CardContainer>
-      <CardContainer>Learn typeScript</CardContainer>
-      <CardContainer>Begin to use static typing</CardContainer>
+      <Card text="Generate app scaffold" /> 
+      <Card text="Learn typeScript" />
+      <Card text="Begin to use static typing" />
+      <AddNewItem toggleButtonText="+ Add another card" onAdd={() => console.log("New item add")} dark />
     </ColumnContainer>
   )
 }
