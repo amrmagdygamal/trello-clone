@@ -8,7 +8,7 @@ const App = () => {
   return (
     <AppContainer>
       <Column text='Todo:' />
-      <AddNewItem toggleButtonText='+ Add another list' onAdd={() => console.log("Item Created")} />
+      <AddNewItem toggleButtonText='+ Add another list' onAdd={(e) => console.log(e)} />
     </AppContainer>
       
   );

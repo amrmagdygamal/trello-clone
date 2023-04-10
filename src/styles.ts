@@ -54,3 +54,33 @@ export const AddItemButton = styled.button<AddItemButtonProps>`
     background-color: #ffffff52;
   }
 `
+
+export const NewItemForm = styled.div`
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+`
+
+export const NItemButton = styled.button`
+  background-color: #5aac44;
+  border-radius: 7px;
+  border: none;
+  box-shadow: none;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  padding: 7px 12px;
+
+`
+
+
+export const NItemInput = styled.input`
+  border-radius: 7px;
+  border: none;
+  margin-bottom: .5rem;
+  box-shadow: #091e4241 0px 1px 0px 0px;
+  padding: .5rem 1rem;
+  width: 100%;
+`
